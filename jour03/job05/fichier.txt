@@ -1,0 +1,5 @@
+db.category.insertMany([
+    { name: "Vêtements" },
+    { name: "Électronique" },
+    { name: "Alimentation" }
+])
