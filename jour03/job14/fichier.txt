@@ -1,0 +1,1 @@
+db.category.find({_id: ObjectId('66447679874565748ebf72c7')})
