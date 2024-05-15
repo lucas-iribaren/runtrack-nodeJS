@@ -1,0 +1,1 @@
+db.category.replaceOne({name: "Alimentation"}, {name: "Vêtements pour enfant"})
