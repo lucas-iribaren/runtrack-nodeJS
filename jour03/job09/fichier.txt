@@ -1,1 +1,1 @@
-db.category.find().sort({name: 1})
+db.category.find().sort({name: 1})  
