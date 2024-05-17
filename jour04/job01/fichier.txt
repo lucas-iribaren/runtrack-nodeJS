@@ -1,0 +1,32 @@
+use LaPlateforme
+
+db.createCollection("student", {
+   validator: {
+      $jsonSchema: {
+         bsonType: "object",
+         required: ["id", "lastname", "firstname", "students_number", "year_id"],
+         properties: {
+            id: {
+               bsonType: "int",
+               description: "identifiant unique de l'étudiant"
+            },
+            lastname: {
+               bsonType: "string",
+               description: "nom de famille de l'étudiant"
+            },
+            firstname: {
+               bsonType: "string",
+               description: "prénom de l'étudiant"
+            },
+            students_number: {
+               bsonType: "int",
+               description: "numéro d'étudiant unique"
+            },
+            year_id: {
+               bsonType: "int",
+               description: "identifiant de l'année académique à laquelle l'étudiant est inscrit"
+            }
+         }
+      }
+   }
+})
